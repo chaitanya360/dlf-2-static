@@ -44,6 +44,7 @@ body {
   align-items: center;
   padding: 10px;
   height: 100%;
+  position: relative;
 }
 
 .model {
@@ -59,6 +60,7 @@ body {
   max-width: 350px;
   padding: 10px 0px;
   justify-content: space-between;
+  padding-bottom: 0px;
 }
 
 .btn {
@@ -67,11 +69,33 @@ body {
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.363);
   font-weight: 600;
   color: var(--font-medium);
-  cursor: pointer;
+  cursor: pointer !important;
   width: fit-content;
   margin: 5px;
   font-size: 1rem;
   border-radius: 3px;
+}
+
+#badge_container {
+  background-color: rgb(0, 110, 255);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.575);
+  padding: 10px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
+  top: 18px;
+  pointer-events: none !important;
+  visibility: hidden;
+}
+
+#badge {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 600px) {
