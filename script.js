@@ -4,7 +4,7 @@ let virtualBtn = document.getElementById("virtual_btn");
 let iframe = document.getElementById("6b0ec302-ba89-4dbf-99d5-6fcfe3d661b2");
 let badge = document.getElementById("badge_container");
 
-let btnBg = "#cccccc";
+let btnBg = "#ffffff";
 let btnColor = "#2c3233";
 
 const elevationURL =
@@ -29,7 +29,7 @@ const resetBtnStyle = () => {
 const handleBtnClick = (e) => {
   let src = "";
   resetBtnStyle();
-  document.getElementById(e.target.id).style.backgroundColor = "dodgerblue";
+  document.getElementById(e.target.id).style.backgroundColor = "black";
   document.getElementById(e.target.id).style.color = "rgba(255,255,255,0.9)";
   switch (e.target.id) {
     case "elevation_btn":

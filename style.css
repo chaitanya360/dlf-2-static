@@ -2,12 +2,12 @@
   --primary: #3e4648;
   --secondary: #cccccc;
   --font-medium: #2c3233;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
   padding: 0;
   margin: 0;
-  font-family: "Ubuntu", Arial, sans-serif;
   background-color: var(--primary);
 }
 
@@ -29,13 +29,21 @@ body {
 }
 .model_title {
   background-color: white;
-  color: rgb(87, 83, 83);
+  color: rgb(56, 55, 55);
   width: 100%;
   text-align: center;
   padding: 10px 0px;
   font-size: 1.4rem;
-  font-weight: 600;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.486);
+  font-weight: 500;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+  padding-top: 5px;
+}
+
+.info {
+  background-color: white;
+  font-size: 0.6rem;
+  text-align: right;
+  color: rgb(112, 112, 112);
 }
 
 .model_view_container {
@@ -58,21 +66,26 @@ body {
   display: flex;
   width: 100%;
   max-width: 350px;
-  padding: 10px 0px;
+  padding: 5px 0px;
+  padding-bottom: 10px;
   justify-content: space-between;
 }
 
 .btn {
-  background-color: var(--secondary);
+  background-color: white;
   padding: 5px 10px;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.363);
-  font-weight: 600;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.363);
+  font-weight: 400;
   color: var(--font-medium);
   cursor: pointer !important;
   width: fit-content;
   margin: 5px;
   font-size: 1rem;
   border-radius: 3px;
+}
+
+.footer {
+  background-color: white;
 }
 
 #badge_container {
