@@ -11,8 +11,7 @@ const elevationURL =
   "https://www.vectary.com/viewer/v1/?model=7d59a429-163b-4b0b-b2c7-48f108edc7bf&env=studio3";
 
 const isoURL =
-  "https://www.vectary.com/viewer/v1/?model=732c66bf-4c5d-4dde-a0ae-9bbb321a2275&env=studio3";
-
+  "https://www.vectary.com/viewer/v1/?model=38c02e98-5248-42f1-96af-bebd88cc0e8b&env=studio3";
 const virtualURL = "https://makevr.pro/Dlf%20furished%20tour/";
 
 const resetBtnStyle = () => {
