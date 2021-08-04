@@ -65,10 +65,11 @@ body {
   margin: auto;
   display: flex;
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   padding: 5px 0px;
   padding-bottom: 10px;
   justify-content: space-between;
+  text-align: center;
 }
 
 .btn {
@@ -113,6 +114,9 @@ body {
 @media screen and (max-width: 600px) {
   .model_title {
     font-size: 1rem;
+  }
+  .btn {
+    font-size: 0.8rem;
   }
 }
 
