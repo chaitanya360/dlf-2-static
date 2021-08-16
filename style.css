@@ -11,32 +11,30 @@ body {
   background-color: var(--primary);
 }
 
-.card_wrapper {
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
 .card {
-  background-color: var(--secondary);
-  height: 100vh;
-  /* max-width: 800px; */
-  width: 100%;
+  background-color: var(--primary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
 }
+
 .model_title {
   background-color: white;
-  color: rgb(56, 55, 55);
-  width: 100%;
   text-align: center;
-  padding: 10px 0px;
+  background-color: white;
+  color: rgb(56, 55, 55);
+  /* width: 100%; */
+  text-align: center;
+  padding: 10px 5px;
   font-size: 1.4rem;
   font-weight: 500;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
   padding-top: 5px;
+  padding-bottom: 0px;
 }
 
 .info {
@@ -44,21 +42,11 @@ body {
   font-size: 0.6rem;
   text-align: right;
   color: rgb(112, 112, 112);
+  margin-top: 5px;
 }
-
 .model_view_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  height: 100%;
+  flex: 1;
   position: relative;
-}
-
-.model {
-  height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .model_btn_container {
@@ -72,6 +60,9 @@ body {
   text-align: center;
 }
 
+.footer {
+  background-color: white;
+}
 .btn {
   background-color: white;
   padding: 5px 10px;
@@ -83,10 +74,6 @@ body {
   margin: 5px;
   font-size: 1rem;
   border-radius: 3px;
-}
-
-.footer {
-  background-color: white;
 }
 
 #badge_container {
@@ -101,8 +88,8 @@ body {
   height: 35px;
   cursor: pointer;
   position: absolute;
-  right: 16px;
-  top: 18px;
+  right: 10px;
+  top: 12px;
   pointer-events: none !important;
   visibility: hidden;
 }
@@ -117,6 +104,14 @@ body {
   }
   .btn {
     font-size: 0.8rem;
+  }
+  #title {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  #sub-title {
+    display: block;
+    font-weight: 600;
   }
 }
 

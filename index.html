@@ -11,6 +11,14 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
@@ -19,35 +27,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="card_wrapper">
-      <div class="card">
-        <div class="model_title">
-          AR and VR experience of Independent Floors at DLF City Phase II,
-          Gurugram
-        </div>
+    <div class="card">
+      <div class="model_title">
+        <span id="title">AR and VR experience of Independent Floors at</span>
+        <span id="sub-title">DLF City Phase II, Gurugram</span>
         <div class="info">
           Click the button below to view in Augmented Reality
         </div>
-        <div class="model_view_container">
-          <div id="badge_container">
-            <img src="./badge.svg" id="badge" />
-          </div>
-          <iframe
-            class="model"
-            height="100%"
-            width="100%"
-            id="6b0ec302-ba89-4dbf-99d5-6fcfe3d661b2"
-            src="https://www.vectary.com/viewer/v1/?model=31f82e89-7208-4add-8ebe-6cb0b1d858b6&env=studio3"
-            frameborder="0"
-          ></iframe>
+      </div>
+      <div class="model_view_container">
+        <div id="badge_container">
+          <img src="./badge.svg" id="badge" />
         </div>
-        <div class="footer">
-          <div class="model_btn_container">
-            <div class="btn" id="elevation_btn">Elevation</div>
-            <div class="btn" id="iso_btn">ISO View</div>
-            <div class="btn" id="virtual_btn">Virtual Tour</div>
-            <div class="btn" id="on_site_btn">On-Site</div>
-          </div>
+        <iframe
+          class="model"
+          height="100%"
+          width="100%"
+          id="6b0ec302-ba89-4dbf-99d5-6fcfe3d661b2"
+          src="https://makevr.pro/Dlf_tour/"
+          frameborder="0"
+          allowfullscreen
+          allow="xr-spatial-tracking; gyroscope; accelerometer"
+          scrolling="no"
+        ></iframe>
+        <!-- <model-viewer
+          class="model"
+          shadow-intensity="5"
+          src="./building.glb"
+          alt="A 3D model of an Elevation"
+          camera-controls
+          minimumRenderScale
+          ar
+          style="height: 100%; width: 100%"
+        ></model-viewer> -->
+      </div>
+      <div class="footer">
+        <div class="model_btn_container">
+          <div class="btn" id="virtual_btn">Virtual Tour</div>
+          <div class="btn" id="iso_btn">ISO View</div>
+          <div class="btn" id="elevation_btn">Elevation</div>
+          <div class="btn" id="on_site_btn">On-Site</div>
         </div>
       </div>
     </div>

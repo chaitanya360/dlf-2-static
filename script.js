@@ -9,14 +9,14 @@ let btnBg = "#ffffff";
 let btnColor = "#2c3233";
 
 const elevationURL =
-  "https://www.vectary.com/viewer/v1/?model=31f82e89-7208-4add-8ebe-6cb0b1d858b6&env=studio3";
+  "https://www.vectary.com/viewer/v1/?model=d87950bb-571c-4fba-ac24-4b33d43be0a3&env=studio3";
 
 const isoURL =
   "https://www.vectary.com/viewer/v1/?model=38c02e98-5248-42f1-96af-bebd88cc0e8b&env=studio3";
-const virtualURL = "https://makevr.pro/Dlf%20furished%20tour/";
+const virtualURL = "https://makevr.pro/Dlf_tour/";
 
 const onSiteURL =
-  "https://www.vectary.com/viewer/v1/?model=70dd7f62-abb7-418d-ae8c-a30982817756&env=studio3";
+  "https://www.vectary.com/viewer/v1/?model=6a4307b3-16f2-4152-9271-8be738eafd9a&env=studio3";
 
 const resetBtnStyle = () => {
   elevationBtn.style.backgroundColor = btnBg;
@@ -56,7 +56,7 @@ const handleBtnClick = (e) => {
   iframe.setAttribute("src", src);
 };
 
-handleBtnClick({ target: { id: "elevation_btn" } });
+handleBtnClick({ target: { id: "virtual_btn" } });
 
 elevationBtn.onclick = handleBtnClick;
 isoBtn.onclick = handleBtnClick;
