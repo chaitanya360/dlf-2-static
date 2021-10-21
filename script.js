@@ -6,7 +6,9 @@ let iframe = document.getElementById("6b0ec302-ba89-4dbf-99d5-6fcfe3d661b2");
 let badge = document.getElementById("badge_container");
 
 let btnBg = "#ffffff";
-let btnColor = "#2c3233";
+let btnColor = "#4B0188";
+const selectedBtnBg = "#4B0188";
+const selectedBtnClr = "#ffffff";
 
 const elevationURL =
   "https://www.vectary.com/viewer/v1/?model=d87950bb-571c-4fba-ac24-4b33d43be0a3&env=studio3";
@@ -36,8 +38,8 @@ const resetBtnStyle = () => {
 const handleBtnClick = (e) => {
   let src = "";
   resetBtnStyle();
-  document.getElementById(e.target.id).style.backgroundColor = "black";
-  document.getElementById(e.target.id).style.color = "rgba(255,255,255,0.9)";
+  document.getElementById(e.target.id).style.backgroundColor = selectedBtnBg;
+  document.getElementById(e.target.id).style.color = selectedBtnClr;
   switch (e.target.id) {
     case "elevation_btn":
       src = elevationURL;
